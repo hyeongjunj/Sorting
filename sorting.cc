@@ -23,7 +23,7 @@ void quicksortImpl(vector<int>& array, int left, int right) {
 		swap(array, pivot, left_);
 	}
 	pivot = left_;
-  if(pivot-1 > left) quicksortImpl(array, left, pivot-1);
+        if(pivot-1 > left) quicksortImpl(array, left, pivot-1);
 	if(pivot+1 < right) quicksortImpl(array, pivot+1, right);
 	return;
 }
