@@ -15,7 +15,7 @@ void quicksortImpl(vector<int>& array, int left, int right) {
 	int left_ = left;
 	int right_ = right;
 	while(left_ < right_) {
-		while(array[right_] > array[pivot] && right_ > left_)  right_--;
+		while(array[right_] > array[pivot] && right_ > left_) right_--;
 		while(array[left_]  < array[pivot] && left_ < right_) left_++;
 		swap(array, left_, right_);
 	}
